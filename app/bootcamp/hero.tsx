@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const templateConfig = {
     colors: {
@@ -21,13 +23,18 @@ const templateConfig = {
     right: {
         logo1: "url('/bootcamp/logo1.svg')", // Replace with image URL or component
         logo2: "url('/bootcamp/logo2.svg')", // Replace with image URL or component
-        date: "4th August - 1st September",
-        rewards: "$ 250 Weekly Rewards",
+        startDate: "4th Aug",
+        endDate: "1st Sep",
+        rewards: "$1000 Prize Pool",
     },
 };
 
 export default function Hero() {
     const config = templateConfig;
+
+    const [started, setIsStarted] = useState(true);
+    const router = useRouter();
+
     return (
         <div
             style={{
@@ -69,7 +76,7 @@ export default function Hero() {
                                 fontSize: "clamp(1.1rem, 2.5vw, 2rem)",
                                 fontWeight: 500,
                                 textAlign: "center",
-                                padding: "18px 0",
+                                padding: "12px 0",
                                 marginTop: 16,
                                 textDecoration: "none",
                                 display: "block",
@@ -77,9 +84,16 @@ export default function Hero() {
                                 maxWidth: "100%",
                                 alignSelf: "center",
                             }}
-                            onClick={() => window.open('https://lu.ma/7f358ugf', '_blank', 'noopener,noreferrer')}
+                            onClick={() => {
+                                if (started) {
+                                    router.push('/bootcamp/agenda');
+                                } else {
+                                    window.open('https://lu.ma/7f358ugf', '_blank', 'noopener,noreferrer');
+                                }
+                            }}
                         >
-                            {config.left.buttonText}
+                            {/* Button text changes based on started state */}
+                            {started ? "Dive In" : config.left.buttonText}
                         </button>
                     </div>
 
@@ -128,11 +142,13 @@ export default function Hero() {
                                 }}
                             >
                                 <div className="flex flex-row items-center gap-8">
-                                    <div className="w-24 h-24 bg-black rounded-lg flex items-center justify-center mr-6">
-                                        D
+                                    <div className="relative w-20 sm:w-24 aspect-square bg-black rounded-lg flex items-center justify-center mr-6">
+                                        <Image src="/bootcamp/whiteCal.png" alt="date" fill className="object-contain p-1 sm:p-2" sizes="(max-width: 640px) 80px, 96px" />
                                     </div>
-                                    <div className="text-white text-3xl sm:text-4xl font-bold tracking-wide" style={{ fontFamily: 'Inter, sans-serif', textShadow: '0 2px 8px #0003' }}>
-                                        {config.right.date}
+                                    <div className="flex flex-row items-center text-white text-2xl sm:text-4xl font-bold tracking-wide gap-2 sm:gap-4" style={{ fontFamily: 'Inter, sans-serif', textShadow: '0 2px 8px #0003' }}>
+                                        <span>{config.right.startDate}</span>
+                                        <span className="mx-1 text-lg sm:text-2xl font-normal opacity-70">→</span>
+                                        <span>{config.right.endDate}</span>
                                     </div>
                                 </div>
 
@@ -149,11 +165,14 @@ export default function Hero() {
                                 }}
                             >
                                 <div className="flex flex-row items-center gap-8">
-                                    <div className="w-24 h-24 bg-black rounded-lg flex items-center justify-center mr-6">
-                                        D
+                                    <div className="relative w-20 sm:w-24 aspect-square bg-black rounded-lg flex items-center justify-center mr-6">
+                                        <Image src="/bootcamp/funds.png" alt="date" fill className="object-contain p-1 sm:p-2" sizes="(max-width: 640px) 80px, 96px" />
                                     </div>
                                     <div className="text-white text-3xl sm:text-4xl font-bold tracking-wide" style={{ fontFamily: 'Inter, sans-serif', textShadow: '0 2px 8px #0003' }}>
-                                        {config.right.rewards}
+                                    <div className="flex flex-col">
+                                        <span className="text-2xl sm:text-4xl font-extrabold text-white drop-shadow">$1000</span>
+                                        <span className="text-sm sm:text-lg font-semibold text-white opacity-80 tracking-wide">Prize Pool</span>
+                                    </div>
                                     </div>
                                 </div>
 
