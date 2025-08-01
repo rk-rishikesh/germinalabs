@@ -32,6 +32,7 @@ export default function AgendaPage() {
                 minWidth: 0,
                 minHeight: 0,
                 boxShadow: "0 0 0 1.5px #0001",
+                backgroundImage: "url('/bootcamp/bgOne.png')",
               }}
               onClick={() => router.push(`/bootcamp/agenda/${week.id}`)}
               role="button"

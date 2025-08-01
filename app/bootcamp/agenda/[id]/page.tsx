@@ -34,7 +34,7 @@ export default function AgendaDetailPage() {
               />
             </div>
           </div>
-          <ul className="divide-y divide-blue-700 mb-12">
+          <ul className="divide-y divide-blue-700 mb-12 min-h-[500px] overflow-y-auto">
             {agenda.map((item, idx) => (
               <li key={idx} className="flex items-center py-6">
                 {/* Step number */}
@@ -58,7 +58,6 @@ export default function AgendaDetailPage() {
           {/* Task Section */}
 
           <div className="flex flex-row justify-between items-center">
-            <div></div>
             <a
               href={taskUrl}
               target="_blank"
@@ -82,6 +81,63 @@ export default function AgendaDetailPage() {
 
               </div>
             </a>
+            <div className="flex items-center gap-4">
+              {/* Previous Week Button for Week 2 */}
+              {parseInt(weekId) === 2 && (
+                <button
+                  onClick={() => router.push('/bootcamp/agenda/1')}
+                  className="flex items-center gap-2 px-4 py-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <span className="text-xl">‹</span>
+                  <span className="hidden sm:inline">Week 1</span>
+                </button>
+              )}
+              
+              {/* Previous Week Button for Week 3 */}
+              {parseInt(weekId) === 3 && (
+                <button
+                  onClick={() => router.push('/bootcamp/agenda/2')}
+                  className="flex items-center gap-2 px-4 py-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <span className="text-xl">‹</span>
+                  <span className="hidden sm:inline">Week 2</span>
+                </button>
+              )}
+              
+              {/* Previous Week Button for Week 4 */}
+              {parseInt(weekId) === 4 && (
+                <button
+                  onClick={() => router.push('/bootcamp/agenda/3')}
+                  className="flex items-center gap-2 px-4 py-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <span className="text-xl">‹</span>
+                  <span className="hidden sm:inline">Week 3</span>
+                </button>
+              )}
+              
+              {/* Next Week Button */}
+              {parseInt(weekId) < 4 && (
+                <button
+                  onClick={() => router.push(`/bootcamp/agenda/${parseInt(weekId) + 1}`)}
+                  className="flex items-center gap-2 px-4 py-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <span className="hidden sm:inline">Week {parseInt(weekId) + 1}</span>
+                  <span className="text-xl">›</span>
+                </button>
+              )}
+              
+              {/* Home Button for Week 4 */}
+              {parseInt(weekId) === 4 && (
+                <button
+                  onClick={() => router.push('/bootcamp/agenda')}
+                  className="flex items-center gap-2 px-4 py-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <span className="hidden sm:inline">Home</span>
+                  <span className="text-xl">›</span>
+                </button>
+              )}
+            </div>
+
           </div>
 
         </div>

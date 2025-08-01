@@ -2,44 +2,39 @@
   "week1": {
     "name": "Week 1",
     "agenda": [
-      { "title": "Introduction to Bootcamp", "date": "01-01-24" },
-      { "title": "Setting Up Development Environment", "date": "02-01-24" },
-      { "title": "Basic Concepts Overview", "date": "03-01-24" },
-      { "title": "First Project Setup", "date": "04-01-24" },
-      { "title": "Week 1 Review & Assessment", "date": "05-01-24" }
+      { "title": "Introduction to Bootcamp", "date": "04-08-25" },
+      { "title": "Introduction to Threshold Cryptography", "date": "05-08-25" },
+      { "title": "What is dcipher Network?", "date": "06-08-25" },
+      { "title": "Use cases of Threshold Cryptography", "date": "07-08-25" },
+      { "title": "Office Hours: Week 1 Review & Assessment", "date": "08-08-25" }
     ],
     "task": { "url": "https://example.com/week1-task" }
   },
   "week2": {
     "name": "Week 2",
     "agenda": [
-      { "title": "Advanced Fundamentals", "date": "08-01-24" },
-      { "title": "Practical Exercises", "date": "09-01-24" },
-      { "title": "Group Collaboration", "date": "10-01-24" },
-      { "title": "Mid-week Checkpoint", "date": "11-01-24" },
-      { "title": "Week 2 Review & Assessment", "date": "12-01-24" }
+      { "title": "Threshold Cryptography & VRF", "date": "11-08-25" },
+      { "title": "Workshop: Generating Verifiable Randomness", "date": "12-08-25" },
+      { "title": "Office Hours", "date": "15-08-25" }
     ],
     "task": { "url": "https://example.com/week2-task" }
   },
   "week3": {
     "name": "Week 3",
     "agenda": [
-      { "title": "Advanced Topics", "date": "15-01-24" },
-      { "title": "Real-world Applications", "date": "16-01-24" },
-      { "title": "Project Development", "date": "17-01-24" },
-      { "title": "Peer Review Session", "date": "18-01-24" },
-      { "title": "Week 3 Review & Assessment", "date": "19-01-24" }
+      { "title": "Building Secure Encryption with Blocklock SDK", "date": "18-08-25" },
+      { "title": "The Cryptography Behind Blocklock SDK", "date": "20-08-25" },
+      { "title": "Office Hours", "date": "22-08-25" }
     ],
     "task": { "url": "https://example.com/week3-task" }
   },
   "week4": {
     "name": "Week 4",
     "agenda": [
-      { "title": "Final Project Work", "date": "22-01-24" },
-      { "title": "Presentation Preparation", "date": "23-01-24" },
-      { "title": "Final Presentations", "date": "24-01-24" },
-      { "title": "Feedback & Evaluation", "date": "25-01-24" },
-      { "title": "Graduation & Next Steps", "date": "26-01-24" }
+      { "title": "Project Ideation Session", "date": "25-08-25" },
+      { "title": "Demo Application Showcase", "date": "26-08-25" },
+      { "title": "Prepare for Submission", "date": "28-08-25" },
+      { "title": "Graduation & Next Steps", "date": "01-09-25" }
     ],
     "task": { "url": "https://example.com/week4-task" }
   }
