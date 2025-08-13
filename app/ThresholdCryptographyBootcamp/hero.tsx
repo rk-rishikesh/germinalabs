@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
@@ -114,7 +114,7 @@ export default function Hero() {
                                 </div>
                             </div>
                             <div
-                                className="flex items-center justify-center w-full aspect-square px-4 sm:px-6"
+                                className="flex items-center justify-center w-full aspect-square px-4 sm:px-6 cursor-pointer hover:opacity-90 transition-opacity"
                                 style={{
                                     background: config.colors.rightBlock4,
                                     borderRadius: 20,
@@ -122,6 +122,7 @@ export default function Hero() {
                                     color: config.colors.rightText,
                                     aspectRatio: "1 / 1",
                                 }}
+                                onClick={() => router.push('/ThresholdCryptographyBootcamp/leaderboard')}
                             >
                                 <div className="flex flex-col items-center text-center text-white text-sm sm:text-base md:text-lg font-bold tracking-wide gap-2" style={{ fontFamily: 'Inter, sans-serif', textShadow: '0 2px 8px #0003' }}>
                                     <div className="relative w-16 sm:w-20 md:w-24 lg:w-32 aspect-square rounded-lg flex items-center justify-center">

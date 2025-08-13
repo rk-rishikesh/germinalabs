@@ -8,7 +8,7 @@ export default function AgendaDetailPage() {
   const params = useParams();
   const weekId = params.id as string;
   const weekKey = `week${weekId}` as keyof typeof agendaData;
-  const week = agendaData[weekKey] || { name: '', agenda: [], task: { url: "#" } };
+  const week = agendaData[weekKey] || { name: '', agenda: [], task: { url: "#" }, resource: "" };
   const agenda = week.agenda || [];
   const taskUrl = week.task?.url || "#";
   const weekName = week.name || '';
@@ -18,7 +18,7 @@ export default function AgendaDetailPage() {
       {/* Left side: 40% on desktop */}
       <div className="hidden lg:block min-w-1/3 min-h-screen bg-cover bg-center fixed" style={{ backgroundImage: "url('/bootcamp/sideThree.png')" }} />
       {/* Right side: 60% on desktop */}
-      
+
       <div className="flex-1 lg:w-3/4 flex items-center justify-center p-4 sm:p-6 lg:p-12 right-0 sm:fixed">
         <div className="w-full max-w-3xl pt-8 pb-8 lg:pt-0 lg:pb-0 lg:ml-20">
           {/* Week Name Heading */}
@@ -52,6 +52,11 @@ export default function AgendaDetailPage() {
                 <div className="ml-4 text-lg sm:text-xl font-light tracking-wide text-white">
                   {item.date}
                 </div>
+                {'resource' in item && item.resource !== "" && (
+                  <div className="ml-4 text-lg sm:text-xl font-light tracking-wide text-white">
+                    <a href={item.resource} target="_blank" rel="noopener noreferrer">📝</a>
+                  </div>
+                )}
               </li>
             ))}
           </ul>
@@ -93,7 +98,7 @@ export default function AgendaDetailPage() {
                   <span className="hidden sm:inline">Week 1</span>
                 </button>
               )}
-              
+
               {/* Previous Week Button for Week 3 */}
               {parseInt(weekId) === 3 && (
                 <button
@@ -104,7 +109,7 @@ export default function AgendaDetailPage() {
                   <span className="hidden sm:inline">Week 2</span>
                 </button>
               )}
-              
+
               {/* Previous Week Button for Week 4 */}
               {parseInt(weekId) === 4 && (
                 <button
@@ -115,7 +120,7 @@ export default function AgendaDetailPage() {
                   <span className="hidden sm:inline">Week 3</span>
                 </button>
               )}
-              
+
               {/* Next Week Button */}
               {parseInt(weekId) < 4 && (
                 <button
@@ -126,7 +131,7 @@ export default function AgendaDetailPage() {
                   <span className="text-xl">›</span>
                 </button>
               )}
-              
+
               {/* Home Button for Week 4 */}
               {parseInt(weekId) === 4 && (
                 <button

@@ -2,40 +2,95 @@
   "week1": {
     "name": "Week 1",
     "agenda": [
-      { "title": "Introduction to Bootcamp", "date": "04-08-25" },
-      { "title": "Introduction to Threshold Cryptography", "date": "05-08-25" },
-      { "title": "What is dcipher Network?", "date": "06-08-25" },
-      { "title": "Use cases of Threshold Cryptography", "date": "07-08-25" },
-      { "title": "Office Hours: Week 1 Review & Assessment", "date": "08-08-25" }
+      {
+        "title": "Introduction to Bootcamp",
+        "date": "04-08-25",
+        "resource": "https://drive.google.com/drive/folders/1YSdM6EIJjqHrWsm-hgaRPBuqGsNm6tCz?usp=sharing"
+      },
+      {
+        "title": "Introduction to Threshold Cryptography",
+        "date": "05-08-25",
+        "resource": "https://drive.google.com/drive/folders/1JAZoIqc2_CZx29KfOc5HGTYNKKQv1PY0?usp=sharing"
+      },
+      {
+        "title": "What is dcipher Network?",
+        "date": "06-08-25",
+        "resource": "https://drive.google.com/drive/folders/1L-j1KPXIX6D044MCDZIPsMYfjk-sjguj?usp=sharing"
+      },
+      {
+        "title": "Use cases of Threshold Cryptography",
+        "date": "07-08-25",
+        "resource": "https://drive.google.com/drive/folders/1m7nwtdY6JJsdQJ3W86pI-Q5TzwSr05OE?usp=sharing"
+      },
+      {
+        "title": "Office Hours: Week 1 Review & Assessment",
+        "date": "08-08-25",
+        "resource": "https://drive.google.com/drive/folders/1WmXmuxC92DGpRJV2eeJ20d-I3YaH0hBC?usp=sharing"
+      }
     ],
-    "task": { "url": "https://example.com/week1-task" }
+    "task": {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfZP2JRn3aQ6wkeV8nXAp8NsULDKqW4Nh6NNz_t6FgfKKnPkA/viewform?usp=dialog"
+    }
   },
   "week2": {
     "name": "Week 2",
     "agenda": [
-      { "title": "Threshold Cryptography & VRF", "date": "11-08-25" },
-      { "title": "Workshop: Generating Verifiable Randomness", "date": "12-08-25" },
-      { "title": "Office Hours", "date": "15-08-25" }
+      {
+        "title": "Threshold Cryptography & VRF",
+        "date": "11-08-25",
+        "resource": "https://drive.google.com/drive/folders/1Hyx1GfXlK2dhecTVZeWW0bu3mU3sH4aZ?usp=sharing"
+      },
+      {
+        "title": "Workshop: Generating Verifiable Randomness",
+        "date": "12-08-25",
+        "resource": "https://drive.google.com/drive/folders/1AmCVx2Bwr0fKhi0fiRx9vj05FexdYQnh?usp=sharing"
+      },
+      {
+        "title": "Game Demo",
+        "date": "13-08-25",
+        "resource": ""
+      },
+      { "title": "Office Hours", "date": "15-08-25", "resource": "" }
     ],
-    "task": { "url": "https://example.com/week2-task" }
+    "task": {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfSBFS9nnC1shTnSHdPWGm5dn3L-VX-VVOd9oKEX4epKpGdLQ/viewform?usp=header"
+    }
   },
   "week3": {
     "name": "Week 3",
     "agenda": [
-      { "title": "Building Secure Encryption with Blocklock SDK", "date": "18-08-25" },
-      { "title": "The Cryptography Behind Blocklock SDK", "date": "20-08-25" },
-      { "title": "Office Hours", "date": "22-08-25" }
+      {
+        "title": "Building Secure Encryption with Blocklock SDK",
+        "date": "18-08-25",
+        "resource": ""
+      },
+      {
+        "title": "The Cryptography Behind Blocklock SDK",
+        "date": "20-08-25",
+        "resource": ""
+      },
+      { "title": "Office Hours", "date": "22-08-25", "resource": "" }
     ],
-    "task": { "url": "https://example.com/week3-task" }
+    "task": {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScz7HEgQMmfpKZmWobCgEXyHuzMvxkzx0l_JwyaV8vE5LjmlA/viewform?usp=header"
+    }
   },
   "week4": {
     "name": "Week 4",
     "agenda": [
-      { "title": "Project Ideation Session", "date": "25-08-25" },
-      { "title": "Demo Application Showcase", "date": "26-08-25" },
-      { "title": "Prepare for Submission", "date": "28-08-25" },
-      { "title": "Graduation & Next Steps", "date": "01-09-25" }
+      {
+        "title": "Project Ideation Session",
+        "date": "25-08-25",
+        "resource": ""
+      },
+      {
+        "title": "Demo Application Showcase",
+        "date": "26-08-25",
+        "resource": ""
+      },
+      { "title": "Prepare for Submission", "date": "28-08-25", "resource": "" },
+      { "title": "Graduation & Next Steps", "date": "01-09-25", "resource": "" }
     ],
     "task": { "url": "https://example.com/week4-task" }
   }
-} 
+}
