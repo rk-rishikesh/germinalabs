@@ -48,7 +48,7 @@
       {
         "title": "Game Demo",
         "date": "13-08-25",
-        "resource": ""
+        "resource": "https://drive.google.com/drive/folders/1RCcn9cRC6vGENP2WgsIFOVVL4Mj86E6S?usp=sharing"
       },
       { "title": "Office Hours", "date": "15-08-25", "resource": "" }
     ],
@@ -60,13 +60,13 @@
     "name": "Week 3",
     "agenda": [
       {
-        "title": "Building Secure Encryption with Blocklock SDK",
+        "title": "The Cryptography Behind Blocklock SDK",
         "date": "18-08-25",
         "resource": ""
       },
       {
-        "title": "The Cryptography Behind Blocklock SDK",
-        "date": "20-08-25",
+        "title": "Building Secure Encryption with Blocklock SDK",
+        "date": "19-08-25",
         "resource": ""
       },
       { "title": "Office Hours", "date": "22-08-25", "resource": "" }
