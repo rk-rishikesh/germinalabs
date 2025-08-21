@@ -4,7 +4,9 @@ import { useRouter } from "next/navigation";
 
 type LeaderboardItem = {
   address: string;
-  score: number;
+  w1: number | null;
+  w2: number | null;
+  total: number | null;
 };
 
 export default function LeaderboardPage() {
@@ -93,14 +95,18 @@ export default function LeaderboardPage() {
                 <div className="text-blue-300 font-medium text-2xl w-10 text-left">
                   {idx + 1}
                 </div>
-                {/* Address and Score */}
+                {/* Address and Week Scores */}
                 <div className="flex-1 min-w-0 ml-4">
                   <span className="block truncate text-base sm:text-xl font-medium">{item.address}</span>
+                  <div className="mt-1 flex items-center gap-2">
+                    <span className="px-2 py-0.5 rounded-full bg-blue-800 text-blue-100 text-xs sm:text-sm">W1: {item.w1 ?? '-'}</span>
+                    <span className="px-2 py-0.5 rounded-full bg-blue-800 text-blue-100 text-xs sm:text-sm">W2: {item.w2 ?? '-'}</span>
+                  </div>
                 </div>
-                {/* Arrow icon in circle */}
+                {/* Total in circle */}
                 <div className="flex-shrink-0 ml-4">
                   <div className="w-10 h-10 rounded-full border border-blue-100 flex items-center justify-center p-2 text-sm">
-                    {item.score}
+                    {item.total ?? '-'}
                   </div>
                 </div>
               </li>
