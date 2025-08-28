@@ -6,6 +6,7 @@ type LeaderboardItem = {
   address: string;
   w1: number | null;
   w2: number | null;
+  w3: number | null;
   total: number | null;
 };
 
@@ -24,6 +25,7 @@ function readScoresCsv(): LeaderboardItem[] {
   const addressIdx = header.indexOf("Address");
   const w1Idx = header.indexOf("W1");
   const w2Idx = header.indexOf("W2");
+  const w3Idx = header.indexOf("W3");
   const totalIdx = header.indexOf("Total");
   if (addressIdx === -1) return [];
 
@@ -43,6 +45,7 @@ function readScoresCsv(): LeaderboardItem[] {
         address: cols[addressIdx].trim(),
         w1: parse(w1Idx),
         w2: parse(w2Idx),
+        w3: parse(w3Idx),
         total: parse(totalIdx),
       };
     });

@@ -6,6 +6,7 @@ type LeaderboardItem = {
   address: string;
   w1: number | null;
   w2: number | null;
+  w3: number | null;
   total: number | null;
 };
 
@@ -101,6 +102,7 @@ export default function LeaderboardPage() {
                   <div className="mt-1 flex items-center gap-2">
                     <span className="px-2 py-0.5 rounded-full bg-blue-800 text-blue-100 text-xs sm:text-sm">W1: {item.w1 ?? '-'}</span>
                     <span className="px-2 py-0.5 rounded-full bg-blue-800 text-blue-100 text-xs sm:text-sm">W2: {item.w2 ?? '-'}</span>
+                    <span className="px-2 py-0.5 rounded-full bg-blue-800 text-blue-100 text-xs sm:text-sm">W3: {item.w3 ?? '-'}</span>
                   </div>
                 </div>
                 {/* Total in circle */}
