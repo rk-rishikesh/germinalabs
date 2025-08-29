@@ -89,8 +89,9 @@
         "resource": ""
       },
       { "title": "Prepare for Submission", "date": "28-08-25", "resource": "" },
+      { "title": "Submission Day", "date": "30-08-25", "resource": "" },
       { "title": "Graduation & Next Steps", "date": "01-09-25", "resource": "" }
     ],
-    "task": { "url": "https://example.com/week4-task" }
+    "task": { "url": "https://docs.google.com/forms/d/e/1FAIpQLScSvXshZoysZfqfhTrHf_aFL2ly_Z9-y9r2Gohci7p1MyvFgw/viewform" }
   }
 }
